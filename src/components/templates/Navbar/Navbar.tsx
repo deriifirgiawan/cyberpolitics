@@ -41,13 +41,15 @@ export const Navbar = () => {
 			<div className="hidden gap-16 lg:flex md:hidden justify-center">
 				{navMenuData.map((value) => {
 					return (
-						<Link
+						<a
 							className={scrolled ? $activeTextStyle : $defaultTextStyle}
-							href={`/${value.slug}`}
+							href={`${value.slug}`}
 							key={value.id}
+							target="_blank"
+							rel="noopener noreferrer"
 						>
 							{value.name}
-						</Link>
+						</a>
 					);
 				})}
 			</div>

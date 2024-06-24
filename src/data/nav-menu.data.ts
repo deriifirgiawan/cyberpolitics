@@ -4,19 +4,19 @@ export const navMenuData: INavData[] = [
 	{
 		id: 1,
 		name: "Walikota.AI",
-		slug: "walikota",
+		slug: "https://walikota.cyberpolitics.ai",
 		type: "navigate",
 	},
 	{
 		id: 2,
 		name: "Gubernur.AI",
-		slug: "gubernur",
+		slug: "https://gubernur.cyberpolitics.ai",
 		type: "navigate",
 	},
 	{
 		id: 3,
 		name: "Bupati.AI",
-		slug: "bupati",
+		slug: "https://bupati.cyberpolitics.ai",
 		type: "navigate",
 	},
 ];
