@@ -63,44 +63,18 @@ export const Navbar = () => {
 				<SheetContent onCloseSheet={() => setOpenSheet(false)}>
 					<div className="gap-4 flex-col flex mt-9">
 						{navMenuData.map((value) => {
-							if (value.type === "navigate") {
-								return (
-									<Link
-										className={
-											scrolled ? $activeTextStyle : $defaultTextStyleSheet
-										}
-										href={`/${value.slug}`}
-										key={value.id}
-									>
-										{value.name}
-									</Link>
-								);
-							}
-
 							return (
-								<div key={value.id}>
-									<Link
-										className={
-											scrolled ? $activeTextStyle : $defaultTextStyleSheet
-										}
-										href={`/${value.slug}`}
-									>
-										{value.name}
-									</Link>
-									<div className="flex flex-col">
-										{value.subLink?.map((item) => (
-											<Link
-												key={item.id}
-												className={`${
-													scrolled ? $activeTextStyle : $defaultTextStyleSheet
-												} ml-4`}
-												href={`/${item.slug}`}
-											>
-												- {item.name}
-											</Link>
-										))}
-									</div>
-								</div>
+								<a
+									className={
+										scrolled ? $activeTextStyle : $defaultTextStyleSheet
+									}
+									href={`${value.slug}`}
+									key={value.id}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									{value.name}
+								</a>
 							);
 						})}
 					</div>
