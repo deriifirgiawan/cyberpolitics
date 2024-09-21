@@ -28,16 +28,6 @@ export const SectionBanner = () => {
 					melalui Analisis Data <b className="text-[#54F4FC]">Politik</b> yang{" "}
 					<b className="text-[#54F4FC]">Akurat</b>
 				</h6>
-
-				<Button
-					data-aos="fade-out"
-					data-aos-duration="1000"
-					data-aos-once="true"
-					variant="outline"
-					className="mt-6 lg:mt-12 md:mt-12 bg-transparent border-2 border-[#54F4FC] text-[#54F4FC] hover:bg-[#54F4FC] font-bold"
-				>
-					Hubungi Kami
-				</Button>
 			</section>
 
 			<section className="block lg:absolute md:absolute md:right-[3rem] lg:right-[3rem]">
