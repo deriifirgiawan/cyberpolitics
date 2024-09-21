@@ -6,12 +6,7 @@ const {
 	ICON_TPS,
 	ICON_PEOPLE,
 	ICON_TIME,
-	ICON_FACEBOOK,
-	ICON_TWITTER,
 	ICON_INSTAGRAM,
-	ICON_LINKEDIN,
-	ICON_YOUTUBE,
-	ICON_TIKTOK,
 } = ImageConstant;
 export const HomeData = {
 	title: "CyberPolitics.AI",
@@ -47,7 +42,7 @@ export const HomeData = {
 		],
 	},
 
-	captions: `“ Di era teknologi cyber dan AI, berpolitik jadi lebih mudah dan efisien. Data pemilih dianalisis secara cepat untuk strategi kampanye yang tepat sasaran. Teknologi ini juga mempermudah komunikasi dengan masyarakat dan membuat keputusan lebih akurat. “`,
+	captions: `“ Di era teknologi modern, politik jadi lebih mudah dan efisien. Data pemilih dianalisis cepat untuk kampanye yang tepat, dan komunikasi dengan masyarakat lebih lancar. “`,
 
 	solutions: {
 		title: "Layanan yang Kami Tawarkan",
@@ -90,42 +85,53 @@ export const HomeData = {
 		],
 	},
 
+	subtitles: [
+		"Naskah Kampanye",
+		"Rekomendasi Strategi",
+		"Micro Strategi",
+		"Desain APK",
+		"Aplikasi Manajemen Tim",
+		"Peta Politik Dapil",
+		"Peta Ekonomi Dapil",
+		"Peta Sosial Dapil",
+	],
+
 	socialMedia: [
-		{
-			id: 1,
-			icon: ICON_FACEBOOK,
-			url: "#",
-			title: "Facebook",
-		},
-		{
-			id: 2,
-			icon: ICON_TWITTER,
-			url: "#",
-			title: "Twitter",
-		},
+		// {
+		// 	id: 1,
+		// 	icon: ICON_FACEBOOK,
+		// 	url: "#",
+		// 	title: "Facebook",
+		// },
+		// {
+		// 	id: 2,
+		// 	icon: ICON_TWITTER,
+		// 	url: "#",
+		// 	title: "Twitter",
+		// },
 		{
 			id: 3,
 			icon: ICON_INSTAGRAM,
-			url: "#",
+			url: "https://www.instagram.com/cyberpolitics.ai?igsh=MTRsMm45NDE1emJrcA==",
 			title: "Instagram",
 		},
-		{
-			id: 4,
-			icon: ICON_LINKEDIN,
-			url: "#",
-			title: "Linkedin",
-		},
-		{
-			id: 5,
-			icon: ICON_YOUTUBE,
-			url: "#",
-			title: "YouTube",
-		},
-		{
-			id: 6,
-			icon: ICON_TIKTOK,
-			url: "#",
-			title: "Tiktok",
-		},
+		// {
+		// 	id: 4,
+		// 	icon: ICON_LINKEDIN,
+		// 	url: "#",
+		// 	title: "Linkedin",
+		// },
+		// {
+		// 	id: 5,
+		// 	icon: ICON_YOUTUBE,
+		// 	url: "#",
+		// 	title: "YouTube",
+		// },
+		// {
+		// 	id: 6,
+		// 	icon: ICON_TIKTOK,
+		// 	url: "#",
+		// 	title: "Tiktok",
+		// },
 	],
 };

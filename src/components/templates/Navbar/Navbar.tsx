@@ -39,8 +39,14 @@ export const Navbar = () => {
 				<Button
 					variant="outline"
 					className="bg-transparent border-2 border-[#54F4FC] text-[#54F4FC] hover:bg-[#54F4FC] font-bold"
+					onClick={() =>
+						window.open(
+							'https://www.instagram.com/cyberpolitics.ai?igsh=MTRsMm45NDE1emJrcA==",',
+							"_blank"
+						)
+					}
 				>
-					Hubungi Kami
+					Siap Jadi Pemenang ? Hubungi Kami
 				</Button>
 			</div>
 
@@ -74,8 +80,14 @@ export const Navbar = () => {
 						<Button
 							variant="outline"
 							className="bg-transparent border-2 border-[#54F4FC] text-[#54F4FC] hover:bg-[#54F4FC] font-bold"
+							onClick={() =>
+								window.open(
+									'https://www.instagram.com/cyberpolitics.ai?igsh=MTRsMm45NDE1emJrcA==",',
+									"_blank"
+								)
+							}
 						>
-							Hubungi Kami
+							Siap Jadi Pemenang ? Hubungi Kami
 						</Button>
 					</div>
 				</SheetContent>
