@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { ImageConstant } from "@/constants";
 import { HomeData } from "@/data/home.data";
 import Image from "next/image";
