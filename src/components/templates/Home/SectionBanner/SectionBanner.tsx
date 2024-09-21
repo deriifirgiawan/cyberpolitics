@@ -1,115 +1,53 @@
-"use client";
-import { Carousel, CarouselItem } from "@/components/ui/carousel";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-import {
-	AwaitedReactNode,
-	Fragment,
-	JSXElementConstructor,
-	ReactElement,
-	ReactNode,
-	ReactPortal,
-	SetStateAction,
-	useState,
-} from "react";
 import { Button } from "@/components/ui/button";
 import { ImageConstant } from "@/constants";
+import { HomeData } from "@/data/home.data";
+import Image from "next/image";
 
-const { BANNER_1, BANNER_2, BANNER_3 } = ImageConstant;
-
-export const SectionCarousel = () => {
-	const [currentSlide, setCurrentSlide] = useState(0);
-	const activeDotColor = "#B8135D";
-	const inactiveDotColor = "white";
-	const settings = {
-		dots: true,
-		infinite: true,
-		speed: 700,
-		autoplay: true,
-		autoplaySpeed: 3000,
-		arrows: false,
-		appendDots: (
-			dots:
-				| string
-				| number
-				| bigint
-				| boolean
-				| ReactElement<any, string | JSXElementConstructor<any>>
-				| Iterable<ReactNode>
-				| ReactPortal
-				| Promise<AwaitedReactNode>
-				| null
-				| undefined
-		) => (
-			<div
-				style={{
-					position: "absolute",
-					bottom: "10px",
-					width: "100%",
-					display: "flex",
-					justifyContent: "center",
-					padding: "10px",
-				}}
-			>
-				<ul style={{ margin: "0px" }}>{dots}</ul>
-			</div>
-		),
-		customPaging: (i: number) => (
-			<div
-				style={{
-					width: "10px",
-					height: "10px",
-					backgroundColor:
-						currentSlide === i ? activeDotColor : inactiveDotColor,
-					borderRadius: "50%",
-					display: "inline-block",
-				}}
-			></div>
-		),
-		beforeChange: (oldIndex: any, newIndex: SetStateAction<number>) => {
-			setCurrentSlide(newIndex);
-		},
-	};
-	const slides = [
-		{ url: BANNER_1, alt: "slide1" },
-		{ url: BANNER_2, alt: "slide2" },
-		{ url: BANNER_3, alt: "slide3" },
-	];
+export const SectionBanner = () => {
+	const { title } = HomeData;
 	return (
-		<div className="overflow-hidden -z-0">
-			<Carousel>
-				<Slider {...settings}>
-					{slides.map((slide, index) => (
-						<Fragment key={index}>
-							<CarouselItem
-								className="aspect-2/1 carousel-item min-h-[32rem] md:h-screen lg:h-screen md:aspect-3/1 bg-center bg-no-repeat bg-cover relative flex items-center justify-center"
-								style={{ backgroundImage: `url(${slide.url})` }}
-							></CarouselItem>
-						</Fragment>
-					))}
-				</Slider>
-				<div className="text-white right-0 left-0 absolute top-24 bottom-0 flex justify-center flex-col px-8">
-					<h1 className="text-4xl font-semibold mb-4">
-						Selamat Datang di CyberPolitics.AI
-					</h1>
-					<p className="text-xl mb-6 pr-[0rem] lg:pr-[48rem] md:pr-[0rem]">
-						Memanfaatkan Artificial Intelligence dan big data untuk memberikan
-						solusi bagi para calon dalam meningkatkan efektivitas kampanye
-						mereka melalui pengumpulan dan analisis data politik yang akurat dan
-						komprehensif.
-					</p>
-					<div>
-						<Button
-							variant="outline"
-							className="bg-transparent font-bold text-lg"
-						>
-							Hubungi Kami
-						</Button>
-					</div>
-				</div>
-			</Carousel>
-		</div>
+		<section className="w-full relative px-6 lg:px-[72px] md:px-[72px] mt-[72px] md:mt-[400px] lg:mt-[400px] flex-col-reverse lg:flex-row md:flex-row flex items-center">
+			<section className="block lg:absolute md:absolute z-20 w-full lg:w-2/4 md:w-2/4">
+				<h1
+					data-aos="fade-out"
+					data-aos-duration="500"
+					data-aos-once="true"
+					className="text-2xl lg:text-4xl md:text-4xl font-bold"
+				>
+					{title}
+				</h1>
+				<h6
+					data-aos="fade-out"
+					data-aos-duration="700"
+					data-aos-once="true"
+					className="mt-4 lg:mt-6 md:mt-6 text-sm lg:text-2xl md:text-2xl"
+				>
+					Menggunakan <b className="text-[#54F4FC]">AI</b> dan{" "}
+					<b className="text-[#54F4FC]">Big Data</b> untuk membantu Calon
+					meningkatkan <b className="text-[#54F4FC]">Efektivitas</b> Kampanye
+					melalui Analisis Data <b className="text-[#54F4FC]">Politik</b> yang{" "}
+					<b className="text-[#54F4FC]">Akurat</b>
+				</h6>
+
+				<Button
+					data-aos="fade-out"
+					data-aos-duration="1000"
+					data-aos-once="true"
+					variant="outline"
+					className="mt-6 lg:mt-12 md:mt-12 bg-transparent border-2 border-[#54F4FC] text-[#54F4FC] hover:bg-[#54F4FC] font-bold"
+				>
+					Hubungi Kami
+				</Button>
+			</section>
+
+			<section className="block lg:absolute md:absolute md:right-[3rem] lg:right-[3rem]">
+				<Image
+					src={ImageConstant.BANNER_HERO}
+					alt="CyberPolitics"
+					width={729}
+					height={550}
+				/>
+			</section>
+		</section>
 	);
 };

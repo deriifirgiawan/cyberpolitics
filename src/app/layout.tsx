@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Figtree } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
+import { AOSInit } from "@/components";
 
-const figtree = Figtree({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "Cyberpolitics.AI",
@@ -19,7 +20,8 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={figtree.className}>{children}</body>
+			<AOSInit />
+			<body className={montserrat.className}>{children}</body>
 		</html>
 	);
 }

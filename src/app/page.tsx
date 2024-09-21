@@ -1,10 +1,15 @@
 import { HomePage, Navbar } from "@/components/templates";
+import { Footer } from "@/components/templates/Footer";
 
 export default function Home() {
 	return (
 		<main>
 			<Navbar />
-			<HomePage.SectionCarousel />
+			<HomePage.SectionBanner />
+			<HomePage.SectionProblem />
+			<HomePage.SectionCaption />
+			<HomePage.SectionSolution />
+			<Footer />
 		</main>
 	);
 }
