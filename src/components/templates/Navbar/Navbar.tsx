@@ -4,13 +4,32 @@ import { Sheet, SheetContent } from "@/components/ui/sheet";
 import { ImageConstant } from "@/constants";
 import { navMenuData } from "@/data/nav-menu.data";
 import { Menu } from "lucide-react";
+import { useEffect } from "react";
+import { useNavbar } from "./hooks";
 import Image from "next/image";
-import { useState } from "react";
 
 export const Navbar = () => {
-	const [openSheet, setOpenSheet] = useState(false);
+	const { scrolled, setScrolled, openSheet, setOpenSheet } = useNavbar();
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const scrollTop = window.scrollY;
+			setScrolled(scrollTop >= 200);
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
+	const $styleDisableScroll =
+		"flex bg-transparent top-0 z-50 fixed transition-all duration-300 w-full items-center justify-between py-4 px-6 lg:px-[72px] md:px-[72px]";
+	const $styleActiveScrill =
+		"flex bg-[#0a0a0a] top-0 z-50 fixed transition-all duration-300 w-full items-center justify-between py-4 px-6 lg:px-[72px] md:px-[72px]";
 	return (
-		<nav className="flex bg-[#0a0a0a] top-0 z-50 fixed transition-all duration-300 w-full items-center justify-between py-4 px-6 lg:px-[72px] md:px-[72px]">
+		<nav className={scrolled ? $styleActiveScrill : $styleDisableScroll}>
 			<Image
 				src={ImageConstant.LOGO}
 				alt="CyberPolitics.AI"
