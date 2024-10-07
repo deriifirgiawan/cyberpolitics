@@ -1,0 +1,15 @@
+.cloud {
+	animation: move-cloud 10s linear infinite;
+}
+
+@keyframes move-cloud {
+	0% {
+		transform: translateX(0);
+	}
+	25% {
+		transform: translateX(50px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
