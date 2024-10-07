@@ -1,0 +1,110 @@
+.smoke {
+	animation: moveSmoke 3s infinite ease-in-out;
+}
+
+@keyframes moveSmoke {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-12px); /* Bergerak ke atas sejauh 20px */
+	}
+	100% {
+		transform: translateY(0); /* Kembali ke posisi awal */
+	}
+}
+
+.flame {
+	animation: shake 1s infinite alternate; /* Animasi getaran */
+}
+
+.shake {
+	animation: shake 1s infinite alternate;
+}
+
+/* Keyframes untuk efek getaran pada pinggir */
+@keyframes shake {
+	0% {
+		transform: translate(0); /* Posisi awal */
+	}
+	25% {
+		transform: translate(-2px, 12px); /* Menggeser ke kiri bawah */
+	}
+	50% {
+		transform: translate(2px, -2px); /* Menggeser ke kanan atas */
+	}
+	75% {
+		transform: translate(-2px, 2px); /* Kembali ke kiri bawah */
+	}
+	100% {
+		transform: translate(0); /* Kembali ke posisi awal */
+	}
+}
+
+.flameColor {
+	animation: changeFlameColor 1s infinite;
+}
+
+@keyframes changeFlameColor {
+	0% {
+		fill: #54f4fc;
+	}
+	25% {
+		fill: #50eaf3;
+	}
+	50% {
+		fill: #49d6dd;
+	}
+	100% {
+		fill: #43c3c9;
+	}
+}
+
+.smallSmoke {
+	animation: smallSmoke 2s infinite ease-in-out;
+}
+
+@keyframes smallSmoke {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.8;
+	}
+}
+
+.rocket {
+	animation: fly 2s linear infinite; /* Animasi terbang */
+}
+
+/* Keyframes untuk efek terbang */
+@keyframes fly {
+	0% {
+		transform: translateY(0) rotate(0deg); /* Posisi awal */
+	}
+	50% {
+		transform: translateY(-10px) rotate(1deg); /* Maju ke atas dengan sedikit rotasi */
+	}
+	100% {
+		transform: translateY(0) rotate(0deg); /* Kembali ke posisi awal */
+	}
+}
+
+/* Tambahkan efek getaran */
+@keyframes shake {
+	0% {
+		transform: translate(0);
+	}
+	25% {
+		transform: translate(-2px, 2px);
+	}
+	50% {
+		transform: translate(2px, -2px);
+	}
+	75% {
+		transform: translate(-2px, 2px);
+	}
+	100% {
+		transform: translate(0);
+	}
+}
