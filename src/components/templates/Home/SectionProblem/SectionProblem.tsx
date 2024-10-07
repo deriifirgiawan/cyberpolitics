@@ -7,7 +7,7 @@ export const SectionProblem = () => {
 	return (
 		<section
 			id="#problem"
-			className="text-center w-full mt-12 px-6 lg:px-[72px] md:px-[72px]"
+			className="text-center w-full mt-6 px-6 lg:px-[72px] md:px-[72px]"
 		>
 			<h1
 				data-aos="fade-out"
