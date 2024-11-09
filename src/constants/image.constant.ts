@@ -66,4 +66,7 @@ export abstract class ImageConstant {
 	static HOW_TO_12 = "/how-to/alur-12.png";
 
 	static BANNER_GIF = "/gif/banner.gif";
+
+	static BANNER_HARU = "/images/haru.png"
+	static GEDUNG_SATE = "/images/gedung_sate.png"
 }
