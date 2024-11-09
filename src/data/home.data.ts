@@ -40,6 +40,28 @@ export const HomeData = {
 					"Kandidat kerap kali kesulitan memantau pergerakan timses dan validasi hasil pekerjaan timses dilakukan secara manual.",
 			},
 		],
+		bdgList: [
+			{
+				id: 5,
+				title: 'Kemacetan Lalu Lintas di Pusat Kota',
+				subtitle: "Kemacetan lalu lintas di Bandung semakin parah, terutama di kawasan pusat kota seperti Dago, Pasteur, dan jalan-jalan utama lainnya. Bertambahnya kendaraan pribadi, keterbatasan infrastruktur jalan, serta kepadatan aktivitas ekonomi menjadi penyebab utama kemacetan, yang berdampak pada menurunnya produktivitas dan kualitas udara."
+			},
+			{
+				id: 6,
+				title: "Krisis Kualitas dan Pasokan Air Bersih",
+				subtitle: "Kota Bandung mengalami permasalahan dalam penyediaan air bersih, baik dari segi kuantitas maupun kualitas. Penurunan sumber air tanah dan pencemaran sumber air oleh limbah rumah tangga serta industri memperburuk krisis ini, yang berimbas pada kesehatan masyarakat dan kelangsungan aktivitas sehari-hari."
+			},
+			{
+				id: 7,
+				title: "Pengelolaan Sampah dan Lingkungan Hidup",
+				subtitle: "Volume sampah di Bandung terus meningkat, sementara sistem pengelolaannya masih belum optimal. TPA (Tempat Pembuangan Akhir) yang semakin penuh dan rendahnya kesadaran akan pengurangan sampah plastik menjadi tantangan besar. Hal ini mengakibatkan masalah pencemaran lingkungan, penumpukan sampah di tempat umum, serta berdampak buruk pada daya tarik wisata."
+			},
+			{
+				id: 8,
+				title: "Kepadatan Hunian dan Permukiman Kumuh",
+				subtitle: "Pertumbuhan penduduk yang pesat dan urbanisasi menyebabkan kawasan hunian di Bandung semakin padat. Banyak kawasan permukiman kumuh yang tidak memiliki fasilitas layak, seperti air bersih dan sanitasi. Kepadatan ini menimbulkan masalah sosial, seperti meningkatnya risiko penyakit, kriminalitas, dan kualitas hidup yang rendah di kalangan masyarakat berpenghasilan rendah."
+			}
+		]
 	},
 
 	captions: `“ Di era teknologi modern, politik jadi lebih mudah dan efisien. Data pemilih dianalisis cepat untuk kampanye yang tepat, dan komunikasi dengan masyarakat lebih lancar. “`,

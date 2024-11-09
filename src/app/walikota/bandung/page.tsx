@@ -5,7 +5,7 @@ export default function WalikotaPage() {
     <main>
       <Walikota.Navbar />
       <Walikota.Banner />
-      <HomePage.SectionProblem />
+      <HomePage.SectionProblem type="bandung" />
       <HomePage.SectionCaption />
       <HomePage.SectionSolution />
     </main>
