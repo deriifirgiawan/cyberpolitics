@@ -13,7 +13,7 @@ export const Banner = () => {
 
       <div className="text-center">
         <h1 className="font-bold text-lg md:text-1xl lg:text-1xl italic">
-          "Bersama Haru Dhanu, kita bangun Bandung yang tidak hanya maju, tapi
+          "Bersama Haru Dhani, kita bangun Bandung yang tidak hanya maju, tapi
           juga bersahaja dan berkeadilan. Saatnya Bandung lebih inklusif untuk
           semua warganya."
         </h1>
